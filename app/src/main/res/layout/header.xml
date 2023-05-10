@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#673AB7">
+
+
+            <TextView
+                android:id="@+id/tv_header_NameHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROYAL HOTEL"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_dropdown_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/background_header"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            <ImageButton
+                android:id="@+id/btn_up_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/background_header"
+                android:src="@drawable/baseline_arrow_drop_up_24"
+                android:visibility="gone" />
+
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background_header"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:visibility="gone" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+</layout>
